@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Link para o arquivo CSS, que estiliza a página -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link para o arquivo JavaScript, que contém a lógica da calculadora -->
+    <script src="../js/calculadora.js" defer></script> 
+</head>
+<body>
+    <section id="calculadora">
+        <div class="content">
+            <!-- Título principal da página -->
+            <h2>Calculadora das Operações Básicas</h2>
+
+            <div class="calculadora">
+                <!-- Campo de entrada para o primeiro número -->
+                <input type="number" id="num1" placeholder="Número 1">
+                <!-- Campo de entrada para o segundo número -->
+                <input type="number" id="num2" placeholder="Número 2">
+                
+                <!-- Botões para cada operação, passando a operação (como '+' ou '-') para a função calculadora() -->
+                <button onclick="calculadora('+')">Soma</button>
+                <button onclick="calculadora('-')">Subtração</button>
+                <button onclick="calculadora('*')">Multiplicação</button>
+                <button onclick="calculadora('/')">Divisão</button>
+
+                <!-- Exibição do resultado da operação -->
+                <p>Resultado: <span id="result"></span></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Botão para voltar ao portfólio, redirecionando para a página 'portifolio.html' -->
+    <a href="../portifolio.html">
+        <button>Voltar para o Portifólio</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Sobre Mim</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section id="quiz">
+        <div class="content">
+            <h2>Quiz - Sobre Mim</h2>
+
+            <p>Qual é o meu nome?</p>
+            <input type="text" id="answer1" placeholder="Digite a resposta">
+
+            <p>Quantos anos eu tenho?</p>
+            <input type="number" id="answer2" placeholder="Digite a resposta">
+
+            <p>Onde eu nasci?</p>
+            <input type="text" id="answer3" placeholder="Digite a resposta">
+
+            <p>Qual curso eu escolhi?</p>
+            <input type="text" id="answer4" placeholder="Digite a resposta">
+
+            <p>Eu tenho animais de estimação?</p>
+            <input type="text" id="answer5" placeholder="Digite a resposta">
+
+            <button onclick="checkQuizAnswer()">Responder</button>
+
+            <p id="quizResult"></p>
+        </div>
+    </section>
+
+    <!-- Botão 'Voltar para o portfólio' inicialmente desabilitado -->
+    <a href="../portifolio.html">
+        <button id="backButton" disabled>Voltar para o portfólio</button>
+    </a>
+
+    <script src="../js/quiz.js" defer></script>
+</body>
+</html>

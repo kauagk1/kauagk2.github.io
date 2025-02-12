@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz a página ser responsiva, ajustando a largura para a tela do dispositivo -->
+    <title>Calculadora IMC</title> <!-- Título da página -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link para o arquivo CSS, que estiliza a página -->
+    <script src="../js/imc.js" defer></script> <!-- Link para o arquivo JavaScript que será carregado após o HTML -->
+</head>
+<body>
+    <!-- Seção da Calculadora IMC -->
+    <section id="imc">
+        <div class="content">
+            <h2>Calculadora IMC</h2> <!-- Título da seção -->
+            <input type="number" id="weight" placeholder="Peso (kg)"> <!-- Campo de entrada para o peso em kg -->
+            <input type="number" id="height" placeholder="Altura (m)"> <!-- Campo de entrada para a altura em metros -->
+            <button onclick="calculateIMC()">Calcular IMC</button> <!-- Botão que chama a função calculateIMC() ao ser clicado -->
+            <p id="imcResult"></p> <!-- Parágrafo onde o resultado do IMC será exibido -->
+        </div>
+    </section>
+
+    <!-- Link para voltar ao portfólio -->
+    <a href="../portifolio.html"> <!-- Link para retornar à página do portfólio -->
+        <button>Voltar para o portfólio</button> <!-- Botão para voltar ao portfólio -->
+    </a> <!-- Fechamento correto da tag <a> -->
+</body>
+</html>

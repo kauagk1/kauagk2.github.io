@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8, suportando caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da página para o tamanho da tela do dispositivo, tornando-a responsiva -->
+    <title>Conversores</title> <!-- Título da página -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link para o arquivo CSS para estilização da página -->
+    <script src="../js/converter.js" defer></script> <!-- Link para o arquivo JavaScript que será carregado depois do HTML ser processado -->
+</head>
+<body>
+    <!-- Seção de Conversão de Temperatura -->
+    <section id="converter">
+        <div class="content">
+            <h2>Conversores</h2> <!-- Título da seção -->
+            <p>Conversor de temperatura (Celsius para Fahrenheit):</p> <!-- Descrição do conversor -->
+            <input type="number" id="tempInput" placeholder="Temperatura em Celsius"> <!-- Campo para o usuário inserir a temperatura em Celsius -->
+            <button onclick="convertTemperature()">Converter</button> <!-- Botão que aciona a função de conversão ao ser clicado -->
+            <p id="temperatureResult"></p> <!-- Parágrafo onde o resultado da conversão será exibido -->
+        </div>
+    </section>
+
+    <!-- Seção de Conversão de Real para Euro -->
+    <section id="real-to-euro">
+        <h2>Conversor de Real para Euro</h2> <!-- Título da seção -->
+        <input type="number" id="real" placeholder="Valor em Real"> <!-- Campo para o usuário inserir o valor em Real -->
+        <button onclick="converterRealParaEuro()">Converter para Euro</button> <!-- Botão que aciona a função de conversão de Real para Euro -->
+        <p id="resultado-real-euro"></p> <!-- Parágrafo onde o resultado da conversão será exibido -->
+    </section>
+
+    <!-- Seção de Conversão de Segundos para Horas e Horas para Segundos -->
+    <section id="seconds-to-hours">
+        <h2>Conversor de Segundos para Horas</h2> <!-- Título da seção -->
+        <input type="number" id="secondsInput" placeholder="Digite os segundos"> <!-- Campo para o usuário inserir o valor em segundos -->
+        <button onclick="converterSegundosParaHoras()">Converter para Horas</button> <!-- Botão que aciona a função de conversão de segundos para horas -->
+        <p id="resultado-segundos"></p> <!-- Parágrafo onde o resultado da conversão será exibido -->
+    
+        <h2>Conversor de Horas para Segundos</h2> <!-- Título da segunda parte da seção -->
+        <input type="number" id="hoursInput" placeholder="Digite as horas"> <!-- Campo para o usuário inserir o valor em horas -->
+        <button onclick="converterHorasParaSegundos()">Converter para Segundos</button> <!-- Botão que aciona a função de conversão de horas para segundos -->
+        <p id="resultado-horas"></p> <!-- Parágrafo onde o resultado da conversão será exibido -->
+    </section>
+
+    <!-- Link para voltar ao portfólio -->
+    <a href="../portifolio.html">
+        <button>Voltar para o portfólio</button> <!-- Botão de navegação para a página de portfólio -->
+    </a> <!-- Fechamento da tag <a> -->
+</body>
+</html>
